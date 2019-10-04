@@ -1,0 +1,26 @@
+label#thumbnail {
+    margin-bottom: 20px;
+    border: 1px dashed #ddd;
+    background-size: cover; /*vai servir pra preview*/
+    cursor: pointer;
+    height: 160px;
+
+    /* esses ultimos 3 é pq quero q o icone da camera fique centralizado dentro da label */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label#thumbnail input { 
+    /* como ta dentro de uma label ela automaticamente redireciona o click pro input, 
+    mesmo q ele esteja invisivel vai abrir a janela de upload */
+    display: none;
+}
+
+label#thumbnail.has-thumbnail{
+    border: 0;
+}
+
+label#thumbnail.has-thumbnail img{
+    display: none;
+}
